@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Money</title>
+
+</head>
+<body>
+<form>
+    <table width="60%" bgcolor="white">
+        <tr>
+            <th>Amount</th>
+            <th><label for="fromCurrency">From Currency</label></th>
+            <th><label for="toCurrency">To Currency</label></th>
+        </tr>
+        <tr>
+            <th><input type="number" id="amount"></th>
+            <th><select name="fromCurrency" id="select1">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select></th>
+            <th><select name="toCurrency" id="select2">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select></th>
+            <div id="displayConvert"></div>
+            <th>
+                <button style="background-color: #5c2be2;color: white;" type="button" id="calculateBtn"
+                       onclick="convertToCurrency()">Convert
+                </button>
+            </th>
+        </tr>
+        <div class="">Result:
+            <span id="given-amount"></span>
+            <span id="base-currency"></span>
+            <span id="result"></span>
+            <span id="after-currency"></span>
+        </div>
+    </table>
+
+    <script src="./index.js"></script>
+</form>
+</body>
+</html>
